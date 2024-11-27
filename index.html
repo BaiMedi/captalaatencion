@@ -134,13 +134,19 @@
         return;
       }
 
+      // Mejoras y sugerencias innovadoras para cada campo
+      const enhancedHeadline = `⚡ ${headline} - Descubre algo que cambiará tu perspectiva.`;
+      const enhancedVisual = visual ? `${visual} (Asegúrate de que la imagen capte la emoción que quieres transmitir)` : "Recuerda que una imagen vale más que mil palabras, elige una que inspire acción.";
+      const enhancedMessage = `${message} ¿Sabías que aplicar estos consejos puede incrementar tu alcance en un 200%? No te lo pierdas.`;
+      const enhancedCta = `${cta} - ¡No dejes pasar esta oportunidad!`;
+
       document.getElementById('result').innerHTML = `
         <h3>Tu publicación optimizada:</h3>
-        <p><strong>Encabezado:</strong> ${headline}</p>
-        <p><strong>Visual:</strong> ${visual}</p>
-        <p><strong>Mensaje:</strong> ${message}</p>
-        <p><strong>Llamada a la acción:</strong> ${cta}</p>
-        <p>¡Ahora estás listo para publicar!</p>
+        <p><strong>Encabezado:</strong> ${enhancedHeadline}</p>
+        <p><strong>Visual:</strong> ${enhancedVisual}</p>
+        <p><strong>Mensaje:</strong> ${enhancedMessage}</p>
+        <p><strong>Llamada a la acción:</strong> ${enhancedCta}</p>
+        <p>¡Ahora estás listo para publicar! Asegúrate de revisar la coherencia y el impacto de cada elemento para lograr el mejor resultado.</p>
       `;
     }
   </script>
